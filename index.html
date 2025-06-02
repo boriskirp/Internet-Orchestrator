@@ -181,6 +181,42 @@
                 transform: none !important;
             }
         }
+
+        /* Стилі для галереї скріншотів */
+.screenshots-gallery {
+    display: flex; /* Використовуємо Flexbox для розташування зображень */
+    flex-wrap: wrap; /* Дозволяємо зображенням переноситися на наступний рядок */
+    justify-content: center; /* Центруємо зображення по горизонталі */
+    gap: 15px; /* Відстань між зображеннями */
+    margin: 30px auto; /* Зовнішній відступ зверху/знизу та центрування галереї */
+    max-width: 1000px; /* Обмеження загальної ширини галереї */
+    padding: 0 15px; /* Внутрішній відступ для менших екранів */
+}
+
+.screenshots-gallery img {
+    width: 100%; /* Займає 100% ширини свого контейнера (або іншого значення) */
+    max-width: 300px; /* Максимальна ширина для кожного зображення */
+    height: 200px; /* Фіксована висота для всіх зображень */
+    object-fit: cover; /* Зображення буде "обрізатися", щоб заповнити заданий розмір */
+    border: 1px solid #ddd; /* Легка рамка */
+    border-radius: 5px; /* Закруглені кути */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Легка тінь */
+}
+
+/* Додаткові стилі для адаптивності (медіа-запити) */
+@media (max-width: 768px) {
+    .screenshots-gallery img {
+        max-width: 250px; /* Трохи менші зображення на планшетах */
+        height: 170px;
+    }
+}
+
+@media (max-width: 480px) {
+    .screenshots-gallery img {
+        max-width: 100%; /* На мобільних телефонах зображення займають всю доступну ширину */
+        height: 180px; /* Зберігаємо висоту */
+    }
+}
     </style>
 </head>
 <body>
@@ -214,6 +250,16 @@
             </p>
         </section>
     </main>
+
+     <div class="screenshots-gallery">
+        <img src="images/screenshot1.png" alt="Інтерфейс Оркестратора 1">
+        <img src="images/screenshot2.png" alt="Інтерфейс Оркестратора 2">
+        <img src="images/screenshot3.png" alt="Інтерфейс Оркестратора 3">
+        <img src="images/screenshot4.png" alt="Інтерфейс Оркестратора 4">
+        <img src="images/screenshot5.png" alt="Інтерфейс Оркестратора 5">
+        <img src="images/screenshot6.png" alt="Інтерфейс Оркестратора 6">
+        <img src="images/screenshot7.png" alt="Інтерфейс Оркестратора 7">
+    </div>
 
     <div id="orchestrator-popup" class="orchestrator-popup">
         <div class="popup-header">
