@@ -1,0 +1,20 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# VS Code (якщо ви використовуєте Visual Studio Code)
+.vscode/
+
+# Node.js (якщо ви використовуєте npm для якихось інструментів або залежностей, наприклад, для розгортання)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Зображення (якщо ви генеруєте якісь тимчасові файли або копії, які не є частиною проєкту)
+*.bak
+*.tmp
