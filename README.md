@@ -76,7 +76,7 @@
 
 Цей проєкт є статичною HTML-сторінкою, яка працює прямо у вашому браузері.
 * **Онлайн (рекомендовано):** Ви можете переглянути робочу версію прямо тут, на GitHub Pages:
-    * **[Ваше посилання на GitHub Pages][(https://boriskirp.github.io/Internet-Orchestrator/))** *(Це посилання з'явиться після того, як ви налаштуєте GitHub Pages)*
+  **[((https://boriskirp.github.io/Internet-Orchestrator/))]** 
 * **Локально:**
     1.  Клонуйте цей репозиторій на свій комп'ютер:
         `git clone https://github.com/yourusername/your-repository-name.git`
